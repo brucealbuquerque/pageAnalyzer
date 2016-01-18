@@ -1,1 +1,3 @@
 # pageAnalyzer
+
+Author: Bruce Albuquerque
