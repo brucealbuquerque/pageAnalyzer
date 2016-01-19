@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" ng-app="Analyzer">
 <head>
     <meta charset="UTF-8" />
     <meta author="Bruce Albuquerque" />
@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="css/app.css" />
 
 </head>
-<body>
+<body ng-controller="myCtrl">
+
+<form method="get">
+    <input type="text" ng-model="url" />
+    <button ng-click="funcao()">analizar</button>
+</form>
+<div ng-repeat="(k,v) in asdf">
+
+    {{k}}:{{v}}
+
+
+    {{status}}</div>
 
 
 <script src="js/jquery.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
